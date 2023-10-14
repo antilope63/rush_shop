@@ -2,3 +2,5 @@ bootstrap.css
 package-lock.json
 package.json
 node_modules
+input.css
+tailwind.config.js
