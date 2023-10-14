@@ -1,0 +1,30 @@
+@import url('https://fonts.cdnfonts.com/css/avenir');
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+  }
+  
+  #navbarLeft {float: left;}
+  #navbarRight {float: right;}
+  
+  .navbar a{
+    display: block;
+    text-align: center;
+    font-family: 'Avenir', sans-serif;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    background-color: white;
+    color: black;
+  }
+
+  .navbar a:hover {
+    background-color: black;
+    color: white;
+  }
