@@ -3,9 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop_Crocs</title>
+    <meta name="description" content="vente de voiture" />
+    <title>Cars_Shop</title>
     <!-- <link rel="stylesheet" href="style.css"> -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 </head>
 
 <body id="body">
@@ -17,15 +21,12 @@
   <div class="max-w-10xl px-2 sm:px-6 lg:px-8">
     <div class="relative flex h-16 items-center justify-between">
       <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-        <!-- Bouton de menu mobile -->
         <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
           <span class="absolute -inset-0.5"></span>
           <span class="sr-only">Ouvrir le menu principal</span>
-          <!-- Icône lorsque le menu est fermé -->
           <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
           </svg>
-          <!-- Icône lorsque le menu est ouvert -->
           <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
           </svg>
@@ -37,34 +38,32 @@
         </div>
         <div class="hidden sm:ml-6 sm:block">
           <div class="flex space-x-4">
-            <a href="#" class="hidden sm:inline-block text-black-50 hover:bg-gray-950 hover:text-white rounded-md px-3 py-2 text-sm font-Avenir hover:scale-110 transition-colors duration-300 transition-transform duration-200">HOME</a>
-            <a href="#" class="hidden sm:inline-block text-black-50 hover:bg-gray-950 hover:text-white rounded-md px-3 py-2 text-sm font-Avenir hover:scale-110 transition-colors duration-300 transition-transform duration-200">SHOP</a>
-            <a href="#" class="hidden sm:inline-block text-black-50 hover:bg-gray-950 hover:text-white rounded-md px-3 py-2 text-sm font-Avenir hover:scale-110 transition-colors duration-300 transition-transform duration-200">MAGAZINE</a>
+            <a href="#" class="hidden sm:inline-block text-black-50 hover:bg-gray-950 hover:text-white rounded-md px-3 py-2 text-sm font-Roboto hover:scale-110 transition-colors duration-300 transition-transform duration-200">HOME</a>
+            <a href="#" class="hidden sm:inline-block text-black-50 hover:bg-gray-950 hover:text-white rounded-md px-3 py-2 text-sm font-Roboto hover:scale-110 transition-colors duration-300 transition-transform duration-200">SHOP</a>
+            <a href="#" class="hidden sm:inline-block text-black-50 hover:bg-gray-950 hover:text-white rounded-md px-3 py-2 text-sm font-Roboto hover:scale-110 transition-colors duration-300 transition-transform duration-200">MAGAZINE</a>
           </div>
         </div>
       </div>
       <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-        <button type="button" class="relative rounded-full bg-white p-1 m-10 text-black hover:text-white hover:bg-black hover:scale-110 transition-colors duration-300 transition-transform duration-20 focus:bg-black focus:text-white focus:outline-4 focus:ring-2 focus:ring-black focus:ring-offset-2 focus:ring-offset-white">
+        <button type="button" class="relative rounded-full bg-transparent p-1 m-10 text-black hover:text-white hover:bg-black hover:scale-110 transition-colors duration-300 transition-transform duration-20 focus:bg-black focus:text-white focus:outline-4 focus:ring-2 focus:ring-black focus:ring-offset-2 focus:ring-offset-white">
           <span class="absolute -inset-1.5"></span>
           <span class="sr-only">Voir les notifications</span>
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
             <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
           </svg>
         </button>
-        <!-- Bouton de menu utilisateur -->
         <button id="openBtn">
-          <a href="#" class="hidden sm:block px-4 py-2 text-sm text-black-950 hover:bg-gray-950 hover:text-white hover:scale-110 transition-colors duration-300 transition-transform duration-200 rounded-md px-3 py-2 text-sm font-Avenir" role="menuitem" tabindex="-1" id="user-menu-item-0">Login</a>
+          <a href="#" class="hidden sm:block px-4 py-2 text-sm text-black-950 hover:bg-gray-950 hover:text-white hover:scale-110 transition-colors duration-300 transition-transform duration-200 rounded-md px-3 py-2 text-sm font-Roboto" role="menuitem" tabindex="-1" id="user-menu-item-0">Login</a>
         </button>
       </div>
     </div>
   </div>
 
-  <!-- Menu mobile, affiché/masqué en fonction de l'état du menu. -->
   <div class="sm:hidden" id="mobile-menu">
     <div class="space-y-1 px-2 pb-3 pt-2">
-      <a href="#" class="hidden sm:inline-block text-black-50 hover:bg-gray-950 hover:text-white rounded-md px-3 py-2 text-sm font-Avenir hover:scale-110 transition-colors duration-300 transition-transform duration-200">HOME</a>
-      <a href="#" class="hidden sm:inline-block text-black-50 hover:bg-gray-950 hover:text-white rounded-md px-3 py-2 text-sm font-Avenir hover:scale-110 transition-colors duration-300 transition-transform duration-200">SHOP</a>
-      <a href="#" class="hidden sm:inline-block text-black-50 hover:bg-gray-950 hover:text-white rounded-md px-3 py-2 text-sm font-Avenir hover:scale-110 transition-colors duration-300 transition-transform duration-200">MAGAZINE</a>
+      <a href="#" class="hidden sm:inline-block text-black-50 hover:bg-gray-950 hover:text-white rounded-md px-3 py-2 text-sm font-Roboto hover:scale-110 transition-colors duration-300 transition-transform duration-200">HOME</a>
+      <a href="#" class="hidden sm:inline-block text-black-50 hover:bg-gray-950 hover:text-white rounded-md px-3 py-2 text-sm font-Roboto hover:scale-110 transition-colors duration-300 transition-transform duration-200">SHOP</a>
+      <a href="#" class="hidden sm:inline-block text-black-50 hover:bg-gray-950 hover:text-white rounded-md px-3 py-2 text-sm font-Roboto hover:scale-110 transition-colors duration-300 transition-transform duration-200">MAGAZINE</a>
     </div>
   </div>
 </nav>
@@ -74,8 +73,7 @@
 
 <!-- Search Bar -->
 
-<div class="flex w-full bg-white p-4">
-  <!-- Logo (toujours visible) -->
+<div class="flex w-full bg-transparent p-4">
   <div class="flex-shrink-0">
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
     <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
@@ -83,7 +81,7 @@
   </div>
   <form class="flex w-full ml-4 md:ml-8">
     <div class="w-full md:w-4/5 px-2 md:px-3">
-      <input type="text" placeholder="Find the crocs that match your needs :)" class="w-full h-10 border-b-2 focus:border-black focus:outline-none">
+      <input type="text" placeholder="Find the car that match your needs :)" class="w-full h-10 border-b-2 focus:border-black focus:outline-none">
     </div>
     <div class="hidden md:inline-block w-1/5 md:w-1/6">
       <select id="pricingType" name="pricingType" class="w-full h-10 border-b-2 text-black px-2 md:px-3 focus:outline-none focus:border-black">
@@ -103,7 +101,7 @@
 
         <!-- login popup -->
         <dialog id="dialog">
-            <div style="height: 500px"><!-- height set to show correctly on TailwindComponents not required when used -->
+            <div style="height: 500px">
                 <div class="fixed pin flex items-center">
                     <div class="fixed pin bg-black opacity-75 z-10"></div>
 
@@ -111,7 +109,7 @@
                         <div class="shadow-lg bg-white rounded-lg p-8">
                             <div class="flex justify-end mb-6">
                                 <button id="closeBtn">
-                                    <span class="mr-2 text-black-50 hover:bg-gray-950 hover:text-white rounded-md px-3 py-2 text-sm font-Avenir hover:scale-110 transition-colors duration-300 transition-transform duration-200">Close</span>
+                                    <span class="mr-2 text-black-50 hover:bg-gray-950 hover:text-white rounded-md px-3 py-2 text-sm font-Roboto hover:scale-110 transition-colors duration-300 transition-transform duration-200">Close</span>
                                     <span>
                                         <i class="fa fa-times"></i>
                                     </span>
@@ -150,7 +148,7 @@
                 </div>
             </div>
         </dialog>
-        <main class="flex justify"> <!-- Centrer la grille dans le main -->
+        <main class="flex justify">
           <section>
             <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
               <div class="mt-8 block lg:hidden">
@@ -286,13 +284,11 @@
                                         <input type="number" id="FilterPriceTo" placeholder="To" class="w-full rounded-md border-gray-200 shadow-sm sm:text-sm" />
                                       </label>
                                     </div>
-                                    <!-- Ajoutez ici la barre d'échelle de prix avec deux curseurs -->
                                     <div class="relative mt-4">
                                       <div class="h-1 bg-gray-300"></div>
                                       <div class="absolute left-0 top-0 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-full w-5 h-5 border border-gray-300 cursor-pointer"></div>
                                       <div class="absolute right-0 top-0 transform translate-x-1/2 -translate-y-1/2 bg-white rounded-full w-5 h-5 border border-gray-300 cursor-pointer"></div>
                                     </div>
-                                    <!-- Fin de la barre d'échelle de prix -->
                                   </div>
                                 </div>
                               </details>
@@ -444,7 +440,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="bg-white shadow-lg rounded-lg">
+                      <div class="bg-transparent shadow-lg rounded-lg">
                         <img src="https://images.unsplash.com/photo-1617196035154-1e7e6e28b0db?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="japanese food" class="rounded-t-lg">
                         <div class="p-4">
                           <div class="flex mb-5">
@@ -461,7 +457,24 @@
                           </a>
                         </div>
                       </div>
-                      <div class="bg-white shadow-lg rounded-lg">
+                      <div class="bg-transparent shadow-lg rounded-lg">
+                        <img src="https://images.unsplash.com/photo-1617196035154-1e7e6e28b0db?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="japanese food" class="rounded-t-lg">
+                        <div class="p-4">
+                          <div class="flex mb-5">
+                            <h3 class="text-2xl text-gray-700">
+                              Japanese
+                            </h3>
+                            <p class="mt-1 ml-auto text-lg font-medium text-gray-900">48$</p>
+                          </div>
+                          <a href="#" class="inline-flex items-center justify-between px-5 py-1 shadow-sm font-medium rounded-md bg-red-600">
+                            <span class="text-gray-100 text-lg">
+                              Order
+                            </span>
+                            <img src="images/food-tray.svg" alt="food tray" class="ml-4 h-6 w-6">
+                          </a>
+                        </div>
+                      </div>
+                      <div class="bg-transparent shadow-lg rounded-lg">
                         <img src="https://images.unsplash.com/photo-1617196035154-1e7e6e28b0db?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="japanese food" class="rounded-t-lg">
                         <div class="p-4">
                           <div class="flex mb-5">
@@ -478,7 +491,7 @@
                           </a>
                         </div>
                       </div>
-                      <div class="bg-white shadow-lg rounded-lg">
+                      <div class="bg-transparent shadow-lg rounded-lg">
                         <img src="https://images.unsplash.com/photo-1617196035154-1e7e6e28b0db?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="japanese food" class="rounded-t-lg">
                         <div class="p-4">
                           <div class="flex mb-5">
@@ -495,7 +508,7 @@
                           </a>
                         </div>
                       </div>
-                      <div class="bg-white shadow-lg rounded-lg">
+                      <div class="bg-transparent shadow-lg rounded-lg">
                         <img src="https://images.unsplash.com/photo-1617196035154-1e7e6e28b0db?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="japanese food" class="rounded-t-lg">
                         <div class="p-4">
                           <div class="flex mb-5">
@@ -512,7 +525,7 @@
                           </a>
                         </div>
                       </div>
-                      <div class="bg-white shadow-lg rounded-lg">
+                      <div class="bg-transparent shadow-lg rounded-lg">
                         <img src="https://images.unsplash.com/photo-1617196035154-1e7e6e28b0db?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="japanese food" class="rounded-t-lg">
                         <div class="p-4">
                           <div class="flex mb-5">
@@ -529,7 +542,7 @@
                           </a>
                         </div>
                       </div>
-                      <div class="bg-white shadow-lg rounded-lg">
+                      <div class="bg-transparent shadow-lg rounded-lg">
                         <img src="https://images.unsplash.com/photo-1617196035154-1e7e6e28b0db?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="japanese food" class="rounded-t-lg">
                         <div class="p-4">
                           <div class="flex mb-5">
@@ -546,90 +559,68 @@
                           </a>
                         </div>
                       </div>
-                      <div class="bg-white shadow-lg rounded-lg">
-                        <img src="https://images.unsplash.com/photo-1617196035154-1e7e6e28b0db?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="japanese food" class="rounded-t-lg">
-                        <div class="p-4">
-                          <div class="flex mb-5">
-                            <h3 class="text-2xl text-gray-700">
-                              Japanese Food
-                            </h3>
-                            <p class="mt-1 ml-auto text-lg font-medium text-gray-900">48$</p>
-                          </div>
-                          <a href="#" class="inline-flex items-center justify-between px-5 py-1 shadow-sm font-medium rounded-md bg-red-600">
-                            <span class="text-gray-100 text-lg">
-                              Order
-                            </span>
-                            <img src="images/food-tray.svg" alt="food tray" class="ml-4 h-6 w-6">
-                          </a>
-                        </div>
-                      </div>
-                
-                        <!-- Répétez cette structure d'article pour chaque article supplémentaire -->
                       </div>
                     </div>
                   </div>
                 </main>
     <footer>
       <div class="relative">
-        <div class="h-16"></div> <!-- Espace réservé pour la hauteur de la barre de pagination -->
-        <div class="sticky bottom-0 left-0 right-0 bg-white">
+        <div class="h-16"></div>
+        <div class="sticky bottom-0 left-0 right-0 bg-transparent">
             <div class="flex justify-center sm:justify-start">
                 <ol class="flex gap-1 text-base font-medium">
-                    <!-- Liens numérotés de 1 à 4, visibles en tout temps -->
                     <li>
-                        <a href="#" class="block h-10 w-10 mx-2 md:mx-3 lg:mx-4 bg-white text-black text-center leading-10 justify-center items-center hover:bg-black hover:text-white hover:scale-105 transition duration-150 focus:bg-black focus:text-white focus:scale-125">
+                        <a href="#" class="block h-10 w-10 mx-2 md:mx-3 lg:mx-4 bg-transparent text-black text-center leading-10 justify-center items-center hover:bg-black hover:text-white hover:scale-105 transition duration-150 focus:bg-black focus:text-white focus:scale-125">
                             1
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="block h-10 w-10 mx-2 md:mx-3 lg:mx-4 bg-white text-black text-center leading-10 justify-center items-center hover:bg-black hover:text-white hover:scale-105 transition duration-150 focus:bg-black focus:text-white focus:scale-125">
+                        <a href="#" class="block h-10 w-10 mx-2 md:mx-3 lg:mx-4 bg-transparent text-black text-center leading-10 justify-center items-center hover:bg-black hover:text-white hover:scale-105 transition duration-150 focus:bg-black focus:text-white focus:scale-125">
                             2
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="block h-10 w-10 mx-2 md:mx-3 lg:mx-4 bg-white text-black text-center leading-10 justify-center items-center hover:bg-black hover:text-white hover:scale-105 transition duration-150 focus:bg-black focus:text-white focus:scale-125">
+                        <a href="#" class="block h-10 w-10 mx-2 md:mx-3 lg:mx-4 bg-transparent text-black text-center leading-10 justify-center items-center hover:bg-black hover:text-white hover:scale-105 transition duration-150 focus:bg-black focus:text-white focus:scale-125">
                             3
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="block h-10 w-10 mx-2 md:mx-3 lg:mx-4 bg-white text-black text-center leading-10 justify-center items-center hover:bg-black hover:text-white hover:scale-105 transition duration-150 focus:bg-black focus:text-white focus:scale-125">
+                        <a href="#" class="block h-10 w-10 mx-2 md:mx-3 lg:mx-4 bg-transparent text-black text-center leading-10 justify-center items-center hover:bg-black hover:text-white hover:scale-105 transition duration-150 focus:bg-black focus:text-white focus:scale-125">
                             4
                         </a>
                     </li>
-                    <!-- Liens numérotés de 5 à 10, masqués sur les écrans de taille `sm` et plus petits -->
                     <li>
-                        <a href="#" class="hidden sm:flex h-10 w-10 mx-2 md:mx-3 lg:mx-4 bg-white text-black text-center leading-10 justify-center items-center hover:bg-black hover:text-white hover:scale-105 transition duration-150 focus:bg-black focus:text-white focus:scale-125">
+                        <a href="#" class="hidden sm:flex h-10 w-10 mx-2 md:mx-3 lg:mx-4 bg-transparent text-black text-center leading-10 justify-center items-center hover:bg-black hover:text-white hover:scale-105 transition duration-150 focus:bg-black focus:text-white focus:scale-125">
                             5
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="hidden sm:flex h-10 w-10 mx-2 md:mx-3 lg:mx-4 bg-white text-black text-center leading-10 justify-center items-center hover:bg-black hover:text-white hover:scale-105 transition duration-150 focus:bg-black focus:text-white focus:scale-125">
+                        <a href="#" class="hidden sm:flex h-10 w-10 mx-2 md:mx-3 lg:mx-4 bg-transparent text-black text-center leading-10 justify-center items-center hover:bg-black hover:text-white hover:scale-105 transition duration-150 focus:bg-black focus:text-white focus:scale-125">
                             6
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="hidden sm:flex h-10 w-10 mx-2 md:mx-3 lg:mx-4 bg-white text-black text-center leading-10 justify-center items-center hover:bg-black hover:text-white hover:scale-105 transition duration-150 focus:bg-black focus:text-white focus:scale-125">
+                        <a href="#" class="hidden sm:flex h-10 w-10 mx-2 md:mx-3 lg:mx-4 bg-transparent text-black text-center leading-10 justify-center items-center hover:bg-black hover:text-white hover:scale-105 transition duration-150 focus:bg-black focus:text-white focus:scale-125">
                             7
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="hidden sm:flex h-10 w-10 mx-2 md:mx-3 lg:mx-4 bg-white text-black text-center leading-10 justify-center items-center hover:bg-black hover:text-white hover:scale-105 transition duration-150 focus.bg-black focus.text-white focus.scale-125">
+                        <a href="#" class="hidden sm:flex h-10 w-10 mx-2 md:mx-3 lg:mx-4 bg-transparent text-black text-center leading-10 justify-center items-center hover:bg-black hover:text-white hover:scale-105 transition duration-150 focus.bg-black focus.text-white focus.scale-125">
                             8
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="hidden sm:flex h-10 w-10 mx-2 md:mx-3 lg:mx-4 bg-white text-black text-center leading-10 justify-center items-center hover:bg-black hover:text-white hover:scale-105 transition duration-150 focus.bg-black focus.text-white focus.scale-125">
+                        <a href="#" class="hidden sm:flex h-10 w-10 mx-2 md:mx-3 lg:mx-4 bg-transparent text-black text-center leading-10 justify-center items-center hover:bg-black hover:text-white hover:scale-105 transition duration-150 focus.bg-black focus.text-white focus.scale-125">
                             9
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="hidden sm:flex h-10 w-10 mx-2 md:mx-3 lg:mx-4 bg-white text-black text-center leading-10 justify-center items-center hover:bg-black hover:text-white hover:scale-105 transition duration-150 focus.bg-black focus.text-white focus.scale-125">
+                        <a href="#" class="hidden sm:flex h-10 w-10 mx-2 md:mx-3 lg:mx-4 bg-transparent text-black text-center leading-10 justify-center items-center hover:bg-black hover:text-white hover:scale-105 transition duration-150 focus.bg-black focus.text-white focus.scale-125">
                             10
                         </a>
                     </li>
-                    <!-- Lien "suivant" -->
                     <li>
-                        <a href="#" class="block h-10 w-10 sm:block md:h-12 md:w-12 lg:h-16 lg:w-16 mx-2 md:mx-3 lg:mx-4 font-bold bg-white text-center leading-10 text-black hover.bg-black hover.text-white hover.scale-105 transition.duration-150 focus.bg-black focus.text-white focus.scale-125">></a>
+                        <a href="#" class="block h-10 w-10 sm:block md:h-12 md:w-12 lg:h-16 lg:w-16 mx-2 md:mx-3 lg:mx-4 font-bold bg-transparent text-center leading-10 text-black hover.bg-black hover.text-white hover.scale-105 transition.duration-150 focus.bg-black focus.text-white focus.scale-125">></a>
                     </li>
                 </ol>
             </div>
