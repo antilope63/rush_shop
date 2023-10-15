@@ -84,25 +84,29 @@
 
 <!-- Search Bar -->
 
-<form class="flex w-full">
-  <div class="flex justify-start items-center">
-      <button type="submit" class="hidden md:inline-block bg-white text-black rounded-full mx-2 px-2 py-0 hover:scale-110 hover:bg-black hover:text-white transition-colors duration-300 transition-transform duration-300">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
-          </svg>
-      </button>
+<div class="flex w-full bg-white p-4">
+  <!-- Logo (toujours visible) -->
+  <div class="flex-shrink-0">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+  </svg>
   </div>
-  <div class="w-3/5 px-3">
+  <form class="flex w-full ml-4 md:ml-8">
+    <div class="w-full md:w-4/5 px-2 md:px-3">
       <input type="text" placeholder="Find the crocs that match your needs :)" class="w-full h-10 border-b-2 focus:border-black focus:outline-none">
-  </div>
-  <div class="w-1/6">
+    </div>
+    <div class="hidden md:inline-block w-1/5 md:w-1/6">
       <select id="pricingType" name="pricingType" class="w-full h-10 border-b-2 text-black px-2 md:px-3 focus:outline-none focus:border-black">
-          <option value="Freemium">Trend</option>
-          <option value="Free">New</option>
-          <option value="Paid">Selection of the week</option>
+        <option value="Freemium">Trend</option>
+        <option value="Free">New</option>
+        <option value="Paid">Selection of the week</option>
       </select>
-  </div>
-</form>
+    </div>
+  </form>
+</div>
+
+
+
 
     </header>
     <main>
