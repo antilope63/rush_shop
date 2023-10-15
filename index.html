@@ -7,7 +7,29 @@
     <!-- <link rel="stylesheet" href="style.css"> -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-
+<style>
+#bouton1{
+  background-color: #ffffff;
+  border-radius: 3px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  text-align: center;
+  font-size: 2px;
+  padding: 6px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+#bouton1:hover{
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  color: #ecb318;
+  text-align: center;
+  font-size: 22px;
+}
+</style>
 <body id="body">
     <header>
 
@@ -31,15 +53,15 @@
           </svg>
         </button>
       </div>
-      <div class="flex flex-1 items-center justify-left sm:items-stretch sm:justify-start">
+      <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
         <div class="flex flex-shrink-0 items-center">
           <img class="h-8 w-auto" src="https://epitechfr-my.sharepoint.com/:i:/r/personal/antonin_planel_epitech_digital/Documents/rush_shop/rush_img/icon/icon_menu.png?csf=1&web=1&e=K4xNUF" alt="Icône">
         </div>
         <div class="hidden sm:ml-6 sm:block">
           <div class="flex space-x-4">
-            <a href="#" class="hidden sm:inline-block text-black-50 hover:bg-gray-950 hover:text-white rounded-md px-3 py-2 text-sm font-Avenir hover:scale-110 transition-colors duration-300 transition-transform duration-200">HOME</a>
-            <a href="#" class="hidden sm:inline-block text-black-50 hover:bg-gray-950 hover:text-white rounded-md px-3 py-2 text-sm font-Avenir hover:scale-110 transition-colors duration-300 transition-transform duration-200">SHOP</a>
-            <a href="#" class="hidden sm:inline-block text-black-50 hover:bg-gray-950 hover:text-white rounded-md px-3 py-2 text-sm font-Avenir hover:scale-110 transition-colors duration-300 transition-transform duration-200">MAGAZINE</a>
+            <a href="#" class="text-black-50 hover:bg-gray-950 hover:text-white rounded-md px-3 py-2 text-sm font-Avenir hover:scale-110 transition-colors duration-300 transition-transform duration-200 hidden sm:inline-block">HOME</a>
+            <a href="#" class="text-black-50 hover:bg-gray-950 hover:text-white rounded-md px-3 py-2 text-sm font-Avenir hover:scale-110 transition-colors duration-300 transition-transform duration-200 hidden sm:inline-block">SHOP</a>
+            <a href="#" class="text-black-50 hover:bg-gray-950 hover:text-white rounded-md px-3 py-2 text-sm font-Avenir hover:scale-110 transition-colors duration-300 transition-transform duration-200 hidden sm:inline-block">MAGAZINE</a>
           </div>
         </div>
       </div>
@@ -51,20 +73,20 @@
             <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
           </svg>
         </button>
-        <!-- Bouton de menu utilisateur -->
+        <!-- Bouton de connexion -->
         <button id="openBtn">
-          <a href="#" class="hidden sm:block px-4 py-2 text-sm text-black-950 hover:bg-gray-950 hover:text-white hover:scale-110 transition-colors duration-300 transition-transform duration-200 rounded-md px-3 py-2 text-sm font-Avenir" role="menuitem" tabindex="-1" id="user-menu-item-0">Login</a>
+          <a href="#" class="block px-4 py-2 text-sm text-black-950 hover:bg-gray-950 hover:text-white hover:scale-110 transition-colors duration-300 transition-transform duration-200 rounded-md px-3 py-2 text-sm font-Avenir" role="menuitem" tabindex="-1" id="user-menu-item-0">Login</a>
         </button>
       </div>
     </div>
   </div>
 
-  <!-- Menu mobile, affiché/masqué en fonction de l'état du menu. -->
+  <!-- Menu mobile, affiché/caché en fonction de l'état du menu. -->
   <div class="sm:hidden" id="mobile-menu">
     <div class="space-y-1 px-2 pb-3 pt-2">
-      <a href="#" class="hidden sm:inline-block text-black-50 hover:bg-gray-950 hover:text-white rounded-md px-3 py-2 text-sm font-Avenir hover:scale-110 transition-colors duration-300 transition-transform duration-200">HOME</a>
-      <a href="#" class="hidden sm:inline-block text-black-50 hover:bg-gray-950 hover:text-white rounded-md px-3 py-2 text-sm font-Avenir hover:scale-110 transition-colors duration-300 transition-transform duration-200">SHOP</a>
-      <a href="#" class="hidden sm:inline-block text-black-50 hover:bg-gray-950 hover:text-white rounded-md px-3 py-2 text-sm font-Avenir hover:scale-110 transition-colors duration-300 transition-transform duration-200">MAGAZINE</a>
+      <a href="#" class="text-black-50 hover:bg-gray-950 hover:text-white rounded-md px-3 py-2 text-sm font-Avenir hover:scale-110 transition-colors duration-300 transition-transform duration-200 hidden sm:inline-block">HOME</a>
+      <a href="#" class="text-black-50 hover:bg-gray-950 hover:text-white rounded-md px-3 py-2 text-sm font-Avenir hover:scale-110 transition-colors duration-300 transition-transform duration-200 hidden sm:inline-block">SHOP</a>
+      <a href="#" class="text-black-50 hover:bg-gray-950 hover:text-white rounded-md px-3 py-2 text-sm font-Avenir hover:scale-110 transition-colors duration-300 transition-transform duration-200 hidden sm:inline-block">MAGAZINE</a>
     </div>
   </div>
 </nav>
@@ -150,39 +172,23 @@
                 </div>
             </div>
         </dialog>
-        <main class="flex gap-8">
-          <section>
-            <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
-              <div class="mt-8 block lg:hidden">
-                <button
-                  class="flex cursor-pointer items-center gap-2 border-b border-gray-400 pb-1 text-gray-900 transition hover:border-gray-600"
-                >
-                  <span class="text-sm font-medium"> Filters</span>
-          
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="h-4 w-4 rtl:rotate-180"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M8.25 4.5l7.5 7.5-7.5 7.5"
-                    />
-                  </svg>
-                </button>
-              </div>
-          
-              <div class="mt-4 lg:mt-8 lg:grid lg:grid-cols-4 lg:items-start lg:gap-8">
-                <div class="hidden space-y-4 lg:block">
-          
-                  <div>
-                    <p class="block text-xs font-medium text-gray-700">Filters</p>
-          
-                    <div class="mt-1 space-y-2">
+        <main class="flex justify"> <!-- Centrer la grille dans le main -->
+    <section>
+      <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+        <div class="mt-8 block lg:hidden">
+          <button class="flex cursor-pointer items-center gap-2 border-b border-gray-400 pb-1 text-gray-900 transition hover:border-gray-600">
+            <span class="text-sm font-medium">Filters</span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-4 w-4 rtl:rotate-180">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+            </svg>
+          </button>
+        </div>
+
+        <div class="mt-4 lg:mt-8 lg:grid lg:grid-cols-4 lg:items-start lg:gap-8">
+          <div class="hidden space-y-4 lg:block">
+            <div>
+              <p class="block text-xs font-medium text-gray-700">Filters</p>
+              <div class="mt-1 space-y-2">
                       <details
                         class="overflow-hidden rounded border border-gray-300 [&_summary::-webkit-details-marker]:hidden"
                       >
@@ -460,28 +466,137 @@
                     </div>
                   </div>
                 </div>
-                <div class="max-w-2xl mx-auto px-4 py-8 lg:max-w-7xl grid grid-cols-1 gap-y-10 gap-x-8 sm:grid-cols-2  lg:grid-cols-3 xl:grid-cols-1">
-                  <div class="bg-white rounded-lg">
-                    <img src="https://images.unsplash.com/photo-1617196035154-1e7e6e28b0db?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="japanese food" class="rounded-t-lg">
-                    <div class="p-4">
-                      <div class="flex mb-5">
-                        <p class="text-xl text-gray-700">
-                          crocs shreck
-                        </p>
-                        <p class="mt-0.5 ml-auto text-lg font-medium text-gray-700">48$</p>
-                      </div>
-                      <div class="flex items-center">
-                        <img src="rush_img/icon/panier-ajouter.png" alt="panier-ajouter" class="h-6 w-6 ml-auto mr-1">
-                      </div>
+                <div class="bg-white shadow-lg rounded-lg">
+                  <img src="https://images.unsplash.com/photo-1617196035154-1e7e6e28b0db?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="japanese food" class="rounded-t-lg">
+                  <div class="p-4">
+                    <div class="flex mb-5">
+                      <h3 class="text-2xl text-gray-700">
+                        Japanese Food
+                      </h3>
+                      <p class="mt-1 ml-auto text-lg font-medium text-gray-900">48$</p>
                     </div>
+                    <a href="#" class="inline-flex items-center justify-between px-5 py-1 shadow-sm font-medium rounded-md bg-red-600">
+                      <span class="text-gray-100 text-lg">
+                        Order
+                      </span>
+                      <img src="images/food-tray.svg" alt="food tray" class="ml-4 h-6 w-6">
+                    </a>
                   </div>
-                </div> 
+                </div>
+                <div class="bg-white shadow-lg rounded-lg">
+                  <img src="https://images.unsplash.com/photo-1617196035154-1e7e6e28b0db?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="japanese food" class="rounded-t-lg">
+                  <div class="p-4">
+                    <div class="flex mb-5">
+                      <h3 class="text-2xl text-gray-700">
+                        Japanese Food
+                      </h3>
+                      <p class="mt-1 ml-auto text-lg font-medium text-gray-900">48$</p>
+                    </div>
+                    <a href="#" class="inline-flex items-center justify-between px-5 py-1 shadow-sm font-medium rounded-md bg-red-600">
+                      <span class="text-gray-100 text-lg">
+                        Order
+                      </span>
+                      <img src="images/food-tray.svg" alt="food tray" class="ml-4 h-6 w-6">
+                    </a>
+                  </div>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg">
+                  <img src="https://images.unsplash.com/photo-1617196035154-1e7e6e28b0db?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="japanese food" class="rounded-t-lg">
+                  <div class="p-4">
+                    <div class="flex mb-5">
+                      <h3 class="text-2xl text-gray-700">
+                        Japanese Food
+                      </h3>
+                      <p class="mt-1 ml-auto text-lg font-medium text-gray-900">48$</p>
+                    </div>
+                    <a href="#" class="inline-flex items-center justify-between px-5 py-1 shadow-sm font-medium rounded-md bg-red-600">
+                      <span class="text-gray-100 text-lg">
+                        Order
+                      </span>
+                      <img src="images/food-tray.svg" alt="food tray" class="ml-4 h-6 w-6">
+                    </a>
+                  </div>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg">
+                  <img src="https://images.unsplash.com/photo-1617196035154-1e7e6e28b0db?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="japanese food" class="rounded-t-lg">
+                  <div class="p-4">
+                    <div class="flex mb-5">
+                      <h3 class="text-2xl text-gray-700">
+                        Japanese Food
+                      </h3>
+                      <p class="mt-1 ml-auto text-lg font-medium text-gray-900">48$</p>
+                    </div>
+                    <a href="#" class="inline-flex items-center justify-between px-5 py-1 shadow-sm font-medium rounded-md bg-red-600">
+                      <span class="text-gray-100 text-lg">
+                        Order
+                      </span>
+                      <img src="images/food-tray.svg" alt="food tray" class="ml-4 h-6 w-6">
+                    </a>
+                  </div>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg">
+                  <img src="https://images.unsplash.com/photo-1617196035154-1e7e6e28b0db?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="japanese food" class="rounded-t-lg">
+                  <div class="p-4">
+                    <div class="flex mb-5">
+                      <h3 class="text-2xl text-gray-700">
+                        Japanese Food
+                      </h3>
+                      <p class="mt-1 ml-auto text-lg font-medium text-gray-900">48$</p>
+                    </div>
+                    <a href="#" class="inline-flex items-center justify-between px-5 py-1 shadow-sm font-medium rounded-md bg-red-600">
+                      <span class="text-gray-100 text-lg">
+                        Order
+                      </span>
+                      <img src="images/food-tray.svg" alt="food tray" class="ml-4 h-6 w-6">
+                    </a>
+                  </div>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg">
+                  <img src="https://images.unsplash.com/photo-1617196035154-1e7e6e28b0db?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="japanese food" class="rounded-t-lg">
+                  <div class="p-4">
+                    <div class="flex mb-5">
+                      <h3 class="text-2xl text-gray-700">
+                        Japanese Food
+                      </h3>
+                      <p class="mt-1 ml-auto text-lg font-medium text-gray-900">48$</p>
+                    </div>
+                    <a href="#" class="inline-flex items-center justify-between px-5 py-1 shadow-sm font-medium rounded-md bg-red-600">
+                      <span class="text-gray-100 text-lg">
+                        Order
+                      </span>
+                      <img src="images/food-tray.svg" alt="food tray" class="ml-4 h-6 w-6">
+                    </a>
+                  </div>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg">
+                  <img src="https://images.unsplash.com/photo-1617196035154-1e7e6e28b0db?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="japanese food" class="rounded-t-lg">
+                  <div class="p-4">
+                    <div class="flex mb-5">
+                      <h3 class="text-2xl text-gray-700">
+                        Japanese Food
+                      </h3>
+                      <p class="mt-1 ml-auto text-lg font-medium text-gray-900">48$</p>
+                    </div>
+                    <a href="#" class="inline-flex items-center justify-between px-5 py-1 shadow-sm font-medium rounded-md bg-red-600">
+                      <span class="text-gray-100 text-lg">
+                        Order
+                      </span>
+                      <img src="images/food-tray.svg" alt="food tray" class="ml-4 h-6 w-6">
+                    </a>
+                  </div>
+                </div>
+          
+                  <!-- Répétez cette structure d'article pour chaque article supplémentaire -->
+                </div>
+              </div>
+            </div>
+                
           </section>
     </main>
     <footer>
       <div class="relative">
         <div class="h-16"></div> <!-- Espace réservé pour la hauteur de la barre de pagination -->
-        <div class="sticky bottom-0 left-0 right-0 bg-white">
+        <div class="sticky bottom-0 left-0 right-0 bg-white shadow-md md:shadow-none">
             <div class="flex justify-center sm:justify-start">
                 <ol class="flex gap-1 text-base font-medium">
                     <!-- Liens numérotés de 1 à 4, visibles en tout temps -->
