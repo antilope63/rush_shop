@@ -7,7 +7,8 @@
     <!-- <link rel="stylesheet" href="style.css"> -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<style>#bouton1{
+<style>
+#bouton1{
   background-color: #ffffff;
   border-radius: 3px;
   border: 1px solid #ffffff;
@@ -34,97 +35,90 @@
 
 <!-- NAV BAR -->
 
-        <nav class="bg-white-50">
-            <div class="max-w-10xl px-2 sm:px-6 lg:px-8">
-              <div class="relative flex h-16 items-center justify-between">
-                <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-                  <!-- Mobile menu button-->
-                  <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
-                    <span class="absolute -inset-0.5"></span>
-                    <span class="sr-only">Open main menu</span>
-                    <!--
-                      Icon when menu is closed.
-          
-                      Menu open: "hidden", Menu closed: "block"
-                    -->
-                    <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                    </svg>
-                    <!--
-                      Icon when menu is open.
-          
-                      Menu open: "block", Menu closed: "hidden"
-                    -->
-                    <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                    </svg>
-                  </button>
-                </div>
-                <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-                  <div class="flex flex-shrink-0 items-center">
-                    <img class="h-8 w-auto" src="https://epitechfr-my.sharepoint.com/:i:/r/personal/antonin_planel_epitech_digital/Documents/rush_shop/rush_img/icon/icon_menu.png?csf=1&web=1&e=K4xNUF" alt="Icon">
-                  </div>
-                  <div class="hidden sm:ml-6 sm:block">
-                    <div class="flex space-x-4">
-                      <a href="#" class="text-black-50 hover:bg-gray-950 hover:text-white rounded-md px-3 py-2 text-sm font-Avenir hover:scale-110 transition-colors duration-300 transition-transform duration-200">HOME</a>
-                      <a href="#" class="text-black-50 hover:bg-gray-950 hover:text-white rounded-md px-3 py-2 text-sm font-Avenir hover:scale-110 transition-colors duration-300 transition-transform duration-200">SHOP</a>
-                      <a href="#" class="text-black-50 hover:bg-gray-950 hover:text-white rounded-md px-3 py-2 text-sm font-Avenir hover:scale-110 transition-colors duration-300 transition-transform duration-200">MAGAZINE</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                  <button type="button" class="relative rounded-full bg-white p-1 m-10 text-black hover:text-white hover:bg-black hover:scale-110 transition-colors duration-300 transition-transform duration-20 focus:bg-black focus:text-white focus:outline-4 focus:ring-2 focus:ring-black focus:ring-offset-2 focus:ring-offset-white">
-                    <span class="absolute -inset-1.5"></span>
-                    <span class="sr-only">View notifications</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
-                    </svg>
-                  </button>
-                      <!-- Active: "bg-gray-100", Not Active: "" -->
-                    <button id="openBtn">
-                        <a href="#" class="block px-4 py-2 text-sm text-black-950 hover:bg-gray-950 hover:text-white hover:scale-110 transition-colors duration-300 transition-transform duration-200 rounded-md px-3 py-2 text-sm font-Avenir" role="menuitem" tabindex="-1" id="user-menu-item-0">Login</a>
-                    </button>
-                        <!-- component -->
+<nav class="bg-white-50">
+  <div class="max-w-10xl px-2 sm:px-6 lg:px-8">
+    <div class="relative flex h-16 items-center justify-between">
+      <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+        <!-- Bouton de menu mobile -->
+        <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+          <span class="absolute -inset-0.5"></span>
+          <span class="sr-only">Ouvrir le menu principal</span>
+          <!-- Icône lorsque le menu est fermé -->
+          <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+          <!-- Icône lorsque le menu est ouvert -->
+          <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+      <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+        <div class="flex flex-shrink-0 items-center">
+          <img class="h-8 w-auto" src="https://epitechfr-my.sharepoint.com/:i:/r/personal/antonin_planel_epitech_digital/Documents/rush_shop/rush_img/icon/icon_menu.png?csf=1&web=1&e=K4xNUF" alt="Icône">
+        </div>
+        <div class="hidden sm:ml-6 sm:block">
+          <div class="flex space-x-4">
+            <a href="#" class="text-black-50 hover:bg-gray-950 hover:text-white rounded-md px-3 py-2 text-sm font-Avenir hover:scale-110 transition-colors duration-300 transition-transform duration-200 hidden sm:inline-block">HOME</a>
+            <a href="#" class="text-black-50 hover:bg-gray-950 hover:text-white rounded-md px-3 py-2 text-sm font-Avenir hover:scale-110 transition-colors duration-300 transition-transform duration-200 hidden sm:inline-block">SHOP</a>
+            <a href="#" class="text-black-50 hover:bg-gray-950 hover:text-white rounded-md px-3 py-2 text-sm font-Avenir hover:scale-110 transition-colors duration-300 transition-transform duration-200 hidden sm:inline-block">MAGAZINE</a>
+          </div>
+        </div>
+      </div>
+      <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+        <button type="button" class="relative rounded-full bg-white p-1 m-10 text-black hover:text-white hover:bg-black hover:scale-110 transition-colors duration-300 transition-transform duration-20 focus:bg-black focus:text-white focus:outline-4 focus:ring-2 focus:ring-black focus:ring-offset-2 focus:ring-offset-white">
+          <span class="absolute -inset-1.5"></span>
+          <span class="sr-only">Voir les notifications</span>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+          </svg>
+        </button>
+        <!-- Bouton de connexion -->
+        <button id="openBtn">
+          <a href="#" class="block px-4 py-2 text-sm text-black-950 hover:bg-gray-950 hover:text-white hover:scale-110 transition-colors duration-300 transition-transform duration-200 rounded-md px-3 py-2 text-sm font-Avenir" role="menuitem" tabindex="-1" id="user-menu-item-0">Login</a>
+        </button>
+      </div>
+    </div>
+  </div>
 
-                        
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          
-            <!-- Mobile menu, show/hide based on menu state. -->
-            <div class="sm:hidden" id="mobile-menu">
-              <div class="space-y-1 px-2 pb-3 pt-2">
-                <a href="#" class="text-black-50 hover:bg-gray-950 hover:text-white rounded-md px-3 py-2 text-sm font-Avenir hover:scale-110 transition-colors duration-300 transition-transform duration-200">HOME</a>
-                <a href="#" class="text-black-50 hover:bg-gray-950 hover:text-white rounded-md px-3 py-2 text-sm font-Avenir hover:scale-110 transition-colors duration-300 transition-transform duration-200">SHOP</a>
-                <a href="#" class="text-black-50 hover:bg-gray-950 hover:text-white rounded-md px-3 py-2 text-sm font-Avenir hover:scale-110 transition-colors duration-300 transition-transform duration-200">MAGAZINE</a>
-              </div>
-            </div>
-        </nav>
+  <!-- Menu mobile, affiché/caché en fonction de l'état du menu. -->
+  <div class="sm:hidden" id="mobile-menu">
+    <div class="space-y-1 px-2 pb-3 pt-2">
+      <a href="#" class="text-black-50 hover:bg-gray-950 hover:text-white rounded-md px-3 py-2 text-sm font-Avenir hover:scale-110 transition-colors duration-300 transition-transform duration-200 hidden sm:inline-block">HOME</a>
+      <a href="#" class="text-black-50 hover:bg-gray-950 hover:text-white rounded-md px-3 py-2 text-sm font-Avenir hover:scale-110 transition-colors duration-300 transition-transform duration-200 hidden sm:inline-block">SHOP</a>
+      <a href="#" class="text-black-50 hover:bg-gray-950 hover:text-white rounded-md px-3 py-2 text-sm font-Avenir hover:scale-110 transition-colors duration-300 transition-transform duration-200 hidden sm:inline-block">MAGAZINE</a>
+    </div>
+  </div>
+</nav>
+
+
 
 
 <!-- Search Bar -->
 
-<form class="flex w-full">
-  <div class="flex justify-start items-center">
-      <button type="submit" class="hidden md:inline-block bg-white text-black rounded-full mx-2 px-2 py-0 hover:scale-110 hover:bg-black hover:text-white transition-colors duration-300 transition-transform duration-300">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
-          </svg>
-      </button>
+<div class="flex w-full bg-white p-4">
+  <!-- Logo (toujours visible) -->
+  <div class="flex-shrink-0">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+  </svg>
   </div>
-  <div class="w-3/5 px-3">
+  <form class="flex w-full ml-4 md:ml-8">
+    <div class="w-full md:w-4/5 px-2 md:px-3">
       <input type="text" placeholder="Find the crocs that match your needs :)" class="w-full h-10 border-b-2 focus:border-black focus:outline-none">
-  </div>
-  <div class="w-1/6">
+    </div>
+    <div class="hidden md:inline-block w-1/5 md:w-1/6">
       <select id="pricingType" name="pricingType" class="w-full h-10 border-b-2 text-black px-2 md:px-3 focus:outline-none focus:border-black">
-          <option value="Freemium">Trend</option>
-          <option value="Free">New</option>
-          <option value="Paid">Selection of the week</option>
+        <option value="Freemium">Trend</option>
+        <option value="Free">New</option>
+        <option value="Paid">Selection of the week</option>
       </select>
-  </div>
-</form>
+    </div>
+  </form>
+</div>
+
+
+
 
     </header>
     <main>
@@ -178,39 +172,23 @@
                 </div>
             </div>
         </dialog>
-        <main class="flex gap-8">
-          <section>
-            <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
-              <div class="mt-8 block lg:hidden">
-                <button
-                  class="flex cursor-pointer items-center gap-2 border-b border-gray-400 pb-1 text-gray-900 transition hover:border-gray-600"
-                >
-                  <span class="text-sm font-medium"> Filters</span>
-          
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="h-4 w-4 rtl:rotate-180"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M8.25 4.5l7.5 7.5-7.5 7.5"
-                    />
-                  </svg>
-                </button>
-              </div>
-          
-              <div class="mt-4 lg:mt-8 lg:grid lg:grid-cols-4 lg:items-start lg:gap-8">
-                <div class="hidden space-y-4 lg:block">
-          
-                  <div>
-                    <p class="block text-xs font-medium text-gray-700">Filters</p>
-          
-                    <div class="mt-1 space-y-2">
+        <main class="flex justify"> <!-- Centrer la grille dans le main -->
+    <section>
+      <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+        <div class="mt-8 block lg:hidden">
+          <button class="flex cursor-pointer items-center gap-2 border-b border-gray-400 pb-1 text-gray-900 transition hover:border-gray-600">
+            <span class="text-sm font-medium">Filters</span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-4 w-4 rtl:rotate-180">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+            </svg>
+          </button>
+        </div>
+
+        <div class="mt-4 lg:mt-8 lg:grid lg:grid-cols-4 lg:items-start lg:gap-8">
+          <div class="hidden space-y-4 lg:block">
+            <div>
+              <p class="block text-xs font-medium text-gray-700">Filters</p>
+              <div class="mt-1 space-y-2">
                       <details
                         class="overflow-hidden rounded border border-gray-300 [&_summary::-webkit-details-marker]:hidden"
                       >
@@ -488,85 +466,201 @@
                     </div>
                   </div>
                 </div>
-                <div class="max-w-2xl mx-auto px-4 py-8 lg:max-w-7xl grid grid-cols-1 gap-y-10 gap-x-8 sm:grid-cols-2  lg:grid-cols-3 xl:grid-cols-1">
-                  <div class="bg-white rounded-lg">
-                    <img src="https://images.unsplash.com/photo-1617196035154-1e7e6e28b0db?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="japanese food" class="rounded-t-lg">
-                    <div class="p-4">
-                      <div class="flex mb-5">
-                        <p class="text-xl text-gray-700">
-                          crocs shreck
-                        </p>
-                        <p class="mt-0.5 ml-auto text-lg font-medium text-gray-700">48$</p>
-                      </div>
-                      <div class="flex items-center">
-                        <img src="rush_img/icon/panier-ajouter.png" alt="panier-ajouter" class="h-6 w-6 ml-auto mr-1">
-                      </div>
+                <div class="bg-white shadow-lg rounded-lg">
+                  <img src="https://images.unsplash.com/photo-1617196035154-1e7e6e28b0db?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="japanese food" class="rounded-t-lg">
+                  <div class="p-4">
+                    <div class="flex mb-5">
+                      <h3 class="text-2xl text-gray-700">
+                        Japanese Food
+                      </h3>
+                      <p class="mt-1 ml-auto text-lg font-medium text-gray-900">48$</p>
                     </div>
+                    <a href="#" class="inline-flex items-center justify-between px-5 py-1 shadow-sm font-medium rounded-md bg-red-600">
+                      <span class="text-gray-100 text-lg">
+                        Order
+                      </span>
+                      <img src="images/food-tray.svg" alt="food tray" class="ml-4 h-6 w-6">
+                    </a>
                   </div>
-                </div> 
+                </div>
+                <div class="bg-white shadow-lg rounded-lg">
+                  <img src="https://images.unsplash.com/photo-1617196035154-1e7e6e28b0db?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="japanese food" class="rounded-t-lg">
+                  <div class="p-4">
+                    <div class="flex mb-5">
+                      <h3 class="text-2xl text-gray-700">
+                        Japanese Food
+                      </h3>
+                      <p class="mt-1 ml-auto text-lg font-medium text-gray-900">48$</p>
+                    </div>
+                    <a href="#" class="inline-flex items-center justify-between px-5 py-1 shadow-sm font-medium rounded-md bg-red-600">
+                      <span class="text-gray-100 text-lg">
+                        Order
+                      </span>
+                      <img src="images/food-tray.svg" alt="food tray" class="ml-4 h-6 w-6">
+                    </a>
+                  </div>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg">
+                  <img src="https://images.unsplash.com/photo-1617196035154-1e7e6e28b0db?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="japanese food" class="rounded-t-lg">
+                  <div class="p-4">
+                    <div class="flex mb-5">
+                      <h3 class="text-2xl text-gray-700">
+                        Japanese Food
+                      </h3>
+                      <p class="mt-1 ml-auto text-lg font-medium text-gray-900">48$</p>
+                    </div>
+                    <a href="#" class="inline-flex items-center justify-between px-5 py-1 shadow-sm font-medium rounded-md bg-red-600">
+                      <span class="text-gray-100 text-lg">
+                        Order
+                      </span>
+                      <img src="images/food-tray.svg" alt="food tray" class="ml-4 h-6 w-6">
+                    </a>
+                  </div>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg">
+                  <img src="https://images.unsplash.com/photo-1617196035154-1e7e6e28b0db?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="japanese food" class="rounded-t-lg">
+                  <div class="p-4">
+                    <div class="flex mb-5">
+                      <h3 class="text-2xl text-gray-700">
+                        Japanese Food
+                      </h3>
+                      <p class="mt-1 ml-auto text-lg font-medium text-gray-900">48$</p>
+                    </div>
+                    <a href="#" class="inline-flex items-center justify-between px-5 py-1 shadow-sm font-medium rounded-md bg-red-600">
+                      <span class="text-gray-100 text-lg">
+                        Order
+                      </span>
+                      <img src="images/food-tray.svg" alt="food tray" class="ml-4 h-6 w-6">
+                    </a>
+                  </div>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg">
+                  <img src="https://images.unsplash.com/photo-1617196035154-1e7e6e28b0db?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="japanese food" class="rounded-t-lg">
+                  <div class="p-4">
+                    <div class="flex mb-5">
+                      <h3 class="text-2xl text-gray-700">
+                        Japanese Food
+                      </h3>
+                      <p class="mt-1 ml-auto text-lg font-medium text-gray-900">48$</p>
+                    </div>
+                    <a href="#" class="inline-flex items-center justify-between px-5 py-1 shadow-sm font-medium rounded-md bg-red-600">
+                      <span class="text-gray-100 text-lg">
+                        Order
+                      </span>
+                      <img src="images/food-tray.svg" alt="food tray" class="ml-4 h-6 w-6">
+                    </a>
+                  </div>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg">
+                  <img src="https://images.unsplash.com/photo-1617196035154-1e7e6e28b0db?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="japanese food" class="rounded-t-lg">
+                  <div class="p-4">
+                    <div class="flex mb-5">
+                      <h3 class="text-2xl text-gray-700">
+                        Japanese Food
+                      </h3>
+                      <p class="mt-1 ml-auto text-lg font-medium text-gray-900">48$</p>
+                    </div>
+                    <a href="#" class="inline-flex items-center justify-between px-5 py-1 shadow-sm font-medium rounded-md bg-red-600">
+                      <span class="text-gray-100 text-lg">
+                        Order
+                      </span>
+                      <img src="images/food-tray.svg" alt="food tray" class="ml-4 h-6 w-6">
+                    </a>
+                  </div>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg">
+                  <img src="https://images.unsplash.com/photo-1617196035154-1e7e6e28b0db?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="japanese food" class="rounded-t-lg">
+                  <div class="p-4">
+                    <div class="flex mb-5">
+                      <h3 class="text-2xl text-gray-700">
+                        Japanese Food
+                      </h3>
+                      <p class="mt-1 ml-auto text-lg font-medium text-gray-900">48$</p>
+                    </div>
+                    <a href="#" class="inline-flex items-center justify-between px-5 py-1 shadow-sm font-medium rounded-md bg-red-600">
+                      <span class="text-gray-100 text-lg">
+                        Order
+                      </span>
+                      <img src="images/food-tray.svg" alt="food tray" class="ml-4 h-6 w-6">
+                    </a>
+                  </div>
+                </div>
+          
+                  <!-- Répétez cette structure d'article pour chaque article supplémentaire -->
+                </div>
+              </div>
+            </div>
+                
           </section>
     </main>
     <footer>
-      <div class="absolute inset-x-0 bottom-0 h-16">
-        <ol class="flex justify-left gap-1 text-xs font-medium">
-
-          <li>
-            <a href="#" class="block h-8 w-8 mx-4 text-center leading-8 bg-black text-white scale-125">1</a>
-          </li>
-          <li>
-            <a href="#" class="block h-8 w-8 mx-4 bg-white text-center leading-8 text-black hover:bg-black
-                              hover:text-white hover:scale-105 transition duration-0 hover:duration-150
-                              focus:bg-black focus:text-white focus:scale-125 focus:duration-150">2</a>
-          </li>
-          <li>
-            <a href="#" class="block h-8 w-8 mx-4 bg-white text-center leading-8 text-black hover:bg-black
-                              hover:text-white hover:scale-105 transition duration-0 hover:duration-150
-                              focus:bg-black focus:text-white focus:scale-125 focus:duration-150">3</a>
-          </li>
-          <li>
-            <a href="#" class="block h-8 w-8 mx-4 bg-white text-center leading-8 text-black hover:bg-black
-                              hover:text-white hover:scale-105 transition duration-0 hover:duration-150
-                              focus:bg-black focus:text-white focus:scale-125 focus:duration-150">4</a>
-          </li>
-          <li>
-            <a href="#" class="block h-8 w-8 mx-4 bg-white text-center leading-8 text-black hover:bg-black
-                              hover:text-white hover:scale-105 transition duration-0 hover:duration-150
-                              focus:bg-black focus:text-white focus:scale-125 focus:duration-150">5</a>
-          </li>
-          <li>
-            <a href="#" class="block h-8 w-8 mx-4 bg-white text-center leading-8 text-black hover:bg-black
-                              hover:text-white hover:scale-105 transition duration-0 hover:duration-150
-                              focus:bg-black focus:text-white focus:scale-125 focus:duration-150">6</a>
-          </li>
-          <li>
-            <a href="#" class="block h-8 w-8 mx-4 bg-white text-center leading-8 text-black hover:bg-black
-                              hover:text-white hover:scale-105 transition duration-0 hover:duration-150
-                              focus:bg-black focus:text-white focus:scale-125 focus:duration-150">7</a>
-          </li>
-          <li>
-            <a href="#" class="block h-8 w-8 mx-4 bg-white text-center leading-8 text-black hover:bg-black
-                              hover:text-white hover:scale-105 transition duration-0 hover:duration-150
-                              focus:bg-black focus:text-white focus:scale-125 focus:duration-150">8</a>
-          </li>
-          <li>
-            <a href="#" class="block h-8 w-8 mx-4 bg-white text-center leading-8 text-black hover:bg-black
-                              hover:text-white hover:scale-105 transition duration-0 hover:duration-150
-                              focus:bg-black focus:text-white focus:scale-125 focus:duration-150">9</a>
-          </li>
-          <li>
-            <a href="#" class="block h-8 w-8 mx-4 bg-white text-center leading-8 text-black hover:bg-black
-                              hover:text-white hover:scale-105 transition duration-0 hover:duration-150
-                              focus:bg-black focus:text-white focus:scale-125 focus:duration-150">10</a>
-          </li>
-          <li>
-            <a href="#" class="block h-8 w-8 mx-4 font-bold bg-white text-center leading-8 text-black hover:bg-black
-                              hover:text-white hover:scale-105 transition duration-0 hover:duration-150
-                              focus:bg-black focus:text-white focus:scale-125 focus:duration-150">></a>
-          </li>
-        </ol>
-      </div>
-    </footer>
+      <div class="relative">
+        <div class="h-16"></div> <!-- Espace réservé pour la hauteur de la barre de pagination -->
+        <div class="sticky bottom-0 left-0 right-0 bg-white shadow-md md:shadow-none">
+            <div class="flex justify-center sm:justify-start">
+                <ol class="flex gap-1 text-base font-medium">
+                    <!-- Liens numérotés de 1 à 4, visibles en tout temps -->
+                    <li>
+                        <a href="#" class="block h-10 w-10 mx-2 md:mx-3 lg:mx-4 bg-white text-black text-center leading-10 justify-center items-center hover:bg-black hover:text-white hover:scale-105 transition duration-150 focus:bg-black focus:text-white focus:scale-125">
+                            1
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="block h-10 w-10 mx-2 md:mx-3 lg:mx-4 bg-white text-black text-center leading-10 justify-center items-center hover:bg-black hover:text-white hover:scale-105 transition duration-150 focus:bg-black focus:text-white focus:scale-125">
+                            2
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="block h-10 w-10 mx-2 md:mx-3 lg:mx-4 bg-white text-black text-center leading-10 justify-center items-center hover:bg-black hover:text-white hover:scale-105 transition duration-150 focus:bg-black focus:text-white focus:scale-125">
+                            3
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="block h-10 w-10 mx-2 md:mx-3 lg:mx-4 bg-white text-black text-center leading-10 justify-center items-center hover:bg-black hover:text-white hover:scale-105 transition duration-150 focus:bg-black focus:text-white focus:scale-125">
+                            4
+                        </a>
+                    </li>
+                    <!-- Liens numérotés de 5 à 10, masqués sur les écrans de taille `sm` et plus petits -->
+                    <li>
+                        <a href="#" class="hidden sm:flex h-10 w-10 mx-2 md:mx-3 lg:mx-4 bg-white text-black text-center leading-10 justify-center items-center hover:bg-black hover:text-white hover:scale-105 transition duration-150 focus:bg-black focus:text-white focus:scale-125">
+                            5
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="hidden sm:flex h-10 w-10 mx-2 md:mx-3 lg:mx-4 bg-white text-black text-center leading-10 justify-center items-center hover:bg-black hover:text-white hover:scale-105 transition duration-150 focus:bg-black focus:text-white focus:scale-125">
+                            6
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="hidden sm:flex h-10 w-10 mx-2 md:mx-3 lg:mx-4 bg-white text-black text-center leading-10 justify-center items-center hover:bg-black hover:text-white hover:scale-105 transition duration-150 focus:bg-black focus:text-white focus:scale-125">
+                            7
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="hidden sm:flex h-10 w-10 mx-2 md:mx-3 lg:mx-4 bg-white text-black text-center leading-10 justify-center items-center hover:bg-black hover:text-white hover:scale-105 transition duration-150 focus.bg-black focus.text-white focus.scale-125">
+                            8
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="hidden sm:flex h-10 w-10 mx-2 md:mx-3 lg:mx-4 bg-white text-black text-center leading-10 justify-center items-center hover:bg-black hover:text-white hover:scale-105 transition duration-150 focus.bg-black focus.text-white focus.scale-125">
+                            9
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="hidden sm:flex h-10 w-10 mx-2 md:mx-3 lg:mx-4 bg-white text-black text-center leading-10 justify-center items-center hover:bg-black hover:text-white hover:scale-105 transition duration-150 focus.bg-black focus.text-white focus.scale-125">
+                            10
+                        </a>
+                    </li>
+                    <!-- Lien "suivant" -->
+                    <li>
+                        <a href="#" class="block h-10 w-10 sm:block md:h-12 md:w-12 lg:h-16 lg:w-16 mx-2 md:mx-3 lg:mx-4 font-bold bg-white text-center leading-10 text-black hover.bg-black hover.text-white hover.scale-105 transition.duration-150 focus.bg-black focus.text-white focus.scale-125">></a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
     
+    </footer>
 </body>
 <script src="script.js"></script>
 </html>
