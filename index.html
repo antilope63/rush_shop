@@ -550,64 +550,72 @@
           </section>
     </main>
     <footer>
-      <div class="absolute inset-x-0 bottom-0 h-16">
-        <ol class="flex justify-left gap-1 text-xs font-medium">
-
-          <li>
-            <a href="#" class="block h-8 w-8 mx-4 text-center leading-8 bg-black text-white scale-125">1</a>
-          </li>
-          <li>
-            <a href="#" class="block h-8 w-8 mx-4 bg-white text-center leading-8 text-black hover:bg-black
-                              hover:text-white hover:scale-105 transition duration-0 hover:duration-150
-                              focus:bg-black focus:text-white focus:scale-125 focus:duration-150">2</a>
-          </li>
-          <li>
-            <a href="#" class="block h-8 w-8 mx-4 bg-white text-center leading-8 text-black hover:bg-black
-                              hover:text-white hover:scale-105 transition duration-0 hover:duration-150
-                              focus:bg-black focus:text-white focus:scale-125 focus:duration-150">3</a>
-          </li>
-          <li>
-            <a href="#" class="block h-8 w-8 mx-4 bg-white text-center leading-8 text-black hover:bg-black
-                              hover:text-white hover:scale-105 transition duration-0 hover:duration-150
-                              focus:bg-black focus:text-white focus:scale-125 focus:duration-150">4</a>
-          </li>
-          <li>
-            <a href="#" class="block h-8 w-8 mx-4 bg-white text-center leading-8 text-black hover:bg-black
-                              hover:text-white hover:scale-105 transition duration-0 hover:duration-150
-                              focus:bg-black focus:text-white focus:scale-125 focus:duration-150">5</a>
-          </li>
-          <li>
-            <a href="#" class="block h-8 w-8 mx-4 bg-white text-center leading-8 text-black hover:bg-black
-                              hover:text-white hover:scale-105 transition duration-0 hover:duration-150
-                              focus:bg-black focus:text-white focus:scale-125 focus:duration-150">6</a>
-          </li>
-          <li>
-            <a href="#" class="block h-8 w-8 mx-4 bg-white text-center leading-8 text-black hover:bg-black
-                              hover:text-white hover:scale-105 transition duration-0 hover:duration-150
-                              focus:bg-black focus:text-white focus:scale-125 focus:duration-150">7</a>
-          </li>
-          <li>
-            <a href="#" class="block h-8 w-8 mx-4 bg-white text-center leading-8 text-black hover:bg-black
-                              hover:text-white hover:scale-105 transition duration-0 hover:duration-150
-                              focus:bg-black focus:text-white focus:scale-125 focus:duration-150">8</a>
-          </li>
-          <li>
-            <a href="#" class="block h-8 w-8 mx-4 bg-white text-center leading-8 text-black hover:bg-black
-                              hover:text-white hover:scale-105 transition duration-0 hover:duration-150
-                              focus:bg-black focus:text-white focus:scale-125 focus:duration-150">9</a>
-          </li>
-          <li>
-            <a href="#" class="block h-8 w-8 mx-4 bg-white text-center leading-8 text-black hover:bg-black
-                              hover:text-white hover:scale-105 transition duration-0 hover:duration-150
-                              focus:bg-black focus:text-white focus:scale-125 focus:duration-150">10</a>
-          </li>
-          <li>
-            <a href="#" class="block h-8 w-8 mx-4 font-bold bg-white text-center leading-8 text-black hover:bg-black
-                              hover:text-white hover:scale-105 transition duration-0 hover:duration-150
-                              focus:bg-black focus:text-white focus:scale-125 focus:duration-150">></a>
-          </li>
-        </ol>
-      </div>
+      <div class="relative">
+        <div class="h-16"></div> <!-- Espace réservé pour la hauteur de la barre de pagination -->
+        <div class="sticky bottom-0 left-0 right-0 bg-white shadow-md md:shadow-none">
+            <div class="flex justify-center sm:justify-start">
+                <ol class="flex gap-1 text-base font-medium">
+                    <!-- Liens numérotés de 1 à 4, visibles en tout temps -->
+                    <li>
+                        <a href="#" class="block h-10 w-10 mx-2 md:mx-3 lg:mx-4 bg-white text-black text-center leading-10 justify-center items-center hover:bg-black hover:text-white hover:scale-105 transition duration-150 focus:bg-black focus:text-white focus:scale-125">
+                            1
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="block h-10 w-10 mx-2 md:mx-3 lg:mx-4 bg-white text-black text-center leading-10 justify-center items-center hover:bg-black hover:text-white hover:scale-105 transition duration-150 focus:bg-black focus:text-white focus:scale-125">
+                            2
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="block h-10 w-10 mx-2 md:mx-3 lg:mx-4 bg-white text-black text-center leading-10 justify-center items-center hover:bg-black hover:text-white hover:scale-105 transition duration-150 focus:bg-black focus:text-white focus:scale-125">
+                            3
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="block h-10 w-10 mx-2 md:mx-3 lg:mx-4 bg-white text-black text-center leading-10 justify-center items-center hover:bg-black hover:text-white hover:scale-105 transition duration-150 focus:bg-black focus:text-white focus:scale-125">
+                            4
+                        </a>
+                    </li>
+                    <!-- Liens numérotés de 5 à 10, masqués sur les écrans de taille `sm` et plus petits -->
+                    <li>
+                        <a href="#" class="hidden sm:flex h-10 w-10 mx-2 md:mx-3 lg:mx-4 bg-white text-black text-center leading-10 justify-center items-center hover:bg-black hover:text-white hover:scale-105 transition duration-150 focus:bg-black focus:text-white focus:scale-125">
+                            5
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="hidden sm:flex h-10 w-10 mx-2 md:mx-3 lg:mx-4 bg-white text-black text-center leading-10 justify-center items-center hover:bg-black hover:text-white hover:scale-105 transition duration-150 focus:bg-black focus:text-white focus:scale-125">
+                            6
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="hidden sm:flex h-10 w-10 mx-2 md:mx-3 lg:mx-4 bg-white text-black text-center leading-10 justify-center items-center hover:bg-black hover:text-white hover:scale-105 transition duration-150 focus:bg-black focus:text-white focus:scale-125">
+                            7
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="hidden sm:flex h-10 w-10 mx-2 md:mx-3 lg:mx-4 bg-white text-black text-center leading-10 justify-center items-center hover:bg-black hover:text-white hover:scale-105 transition duration-150 focus.bg-black focus.text-white focus.scale-125">
+                            8
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="hidden sm:flex h-10 w-10 mx-2 md:mx-3 lg:mx-4 bg-white text-black text-center leading-10 justify-center items-center hover:bg-black hover:text-white hover:scale-105 transition duration-150 focus.bg-black focus.text-white focus.scale-125">
+                            9
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="hidden sm:flex h-10 w-10 mx-2 md:mx-3 lg:mx-4 bg-white text-black text-center leading-10 justify-center items-center hover:bg-black hover:text-white hover:scale-105 transition duration-150 focus.bg-black focus.text-white focus.scale-125">
+                            10
+                        </a>
+                    </li>
+                    <!-- Lien "suivant" -->
+                    <li>
+                        <a href="#" class="block h-10 w-10 sm:block md:h-12 md:w-12 lg:h-16 lg:w-16 mx-2 md:mx-3 lg:mx-4 font-bold bg-white text-center leading-10 text-black hover.bg-black hover.text-white hover.scale-105 transition.duration-150 focus.bg-black focus.text-white focus.scale-125">></a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    
     </footer>
 </body>
 <script src="script.js"></script>
