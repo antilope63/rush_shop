@@ -7,28 +7,7 @@
     <!-- <link rel="stylesheet" href="style.css"> -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<style>#bouton1{
-  background-color: #ffffff;
-  border-radius: 3px;
-  border: 1px solid #ffffff;
-  color: #ffffff;
-  text-align: center;
-  font-size: 2px;
-  padding: 6px;
-  cursor: pointer;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
-}
-#bouton1:hover{
-  background-color: #ffffff;
-  border: 1px solid #000000;
-  color: #ecb318;
-  text-align: center;
-  font-size: 22px;
-}
-</style>
+
 <body id="body">
     <header>
 
@@ -52,15 +31,15 @@
           </svg>
         </button>
       </div>
-      <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+      <div class="flex flex-1 items-center justify-left sm:items-stretch sm:justify-start">
         <div class="flex flex-shrink-0 items-center">
           <img class="h-8 w-auto" src="https://epitechfr-my.sharepoint.com/:i:/r/personal/antonin_planel_epitech_digital/Documents/rush_shop/rush_img/icon/icon_menu.png?csf=1&web=1&e=K4xNUF" alt="Icône">
         </div>
         <div class="hidden sm:ml-6 sm:block">
           <div class="flex space-x-4">
-            <a href="#" class="text-black-50 hover:bg-gray-950 hover:text-white rounded-md px-3 py-2 text-sm font-Avenir hover:scale-110 transition-colors duration-300 transition-transform duration-200 hidden sm:inline-block">HOME</a>
-            <a href="#" class="text-black-50 hover:bg-gray-950 hover:text-white rounded-md px-3 py-2 text-sm font-Avenir hover:scale-110 transition-colors duration-300 transition-transform duration-200 hidden sm:inline-block">SHOP</a>
-            <a href="#" class="text-black-50 hover:bg-gray-950 hover:text-white rounded-md px-3 py-2 text-sm font-Avenir hover:scale-110 transition-colors duration-300 transition-transform duration-200 hidden sm:inline-block">MAGAZINE</a>
+            <a href="#" class="hidden sm:inline-block text-black-50 hover:bg-gray-950 hover:text-white rounded-md px-3 py-2 text-sm font-Avenir hover:scale-110 transition-colors duration-300 transition-transform duration-200">HOME</a>
+            <a href="#" class="hidden sm:inline-block text-black-50 hover:bg-gray-950 hover:text-white rounded-md px-3 py-2 text-sm font-Avenir hover:scale-110 transition-colors duration-300 transition-transform duration-200">SHOP</a>
+            <a href="#" class="hidden sm:inline-block text-black-50 hover:bg-gray-950 hover:text-white rounded-md px-3 py-2 text-sm font-Avenir hover:scale-110 transition-colors duration-300 transition-transform duration-200">MAGAZINE</a>
           </div>
         </div>
       </div>
@@ -72,20 +51,20 @@
             <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
           </svg>
         </button>
-        <!-- Bouton de connexion -->
+        <!-- Bouton de menu utilisateur -->
         <button id="openBtn">
-          <a href="#" class="block px-4 py-2 text-sm text-black-950 hover:bg-gray-950 hover:text-white hover:scale-110 transition-colors duration-300 transition-transform duration-200 rounded-md px-3 py-2 text-sm font-Avenir" role="menuitem" tabindex="-1" id="user-menu-item-0">Login</a>
+          <a href="#" class="hidden sm:block px-4 py-2 text-sm text-black-950 hover:bg-gray-950 hover:text-white hover:scale-110 transition-colors duration-300 transition-transform duration-200 rounded-md px-3 py-2 text-sm font-Avenir" role="menuitem" tabindex="-1" id="user-menu-item-0">Login</a>
         </button>
       </div>
     </div>
   </div>
 
-  <!-- Menu mobile, affiché/caché en fonction de l'état du menu. -->
+  <!-- Menu mobile, affiché/masqué en fonction de l'état du menu. -->
   <div class="sm:hidden" id="mobile-menu">
     <div class="space-y-1 px-2 pb-3 pt-2">
-      <a href="#" class="text-black-50 hover:bg-gray-950 hover:text-white rounded-md px-3 py-2 text-sm font-Avenir hover:scale-110 transition-colors duration-300 transition-transform duration-200 hidden sm:inline-block">HOME</a>
-      <a href="#" class="text-black-50 hover:bg-gray-950 hover:text-white rounded-md px-3 py-2 text-sm font-Avenir hover:scale-110 transition-colors duration-300 transition-transform duration-200 hidden sm:inline-block">SHOP</a>
-      <a href="#" class="text-black-50 hover:bg-gray-950 hover:text-white rounded-md px-3 py-2 text-sm font-Avenir hover:scale-110 transition-colors duration-300 transition-transform duration-200 hidden sm:inline-block">MAGAZINE</a>
+      <a href="#" class="hidden sm:inline-block text-black-50 hover:bg-gray-950 hover:text-white rounded-md px-3 py-2 text-sm font-Avenir hover:scale-110 transition-colors duration-300 transition-transform duration-200">HOME</a>
+      <a href="#" class="hidden sm:inline-block text-black-50 hover:bg-gray-950 hover:text-white rounded-md px-3 py-2 text-sm font-Avenir hover:scale-110 transition-colors duration-300 transition-transform duration-200">SHOP</a>
+      <a href="#" class="hidden sm:inline-block text-black-50 hover:bg-gray-950 hover:text-white rounded-md px-3 py-2 text-sm font-Avenir hover:scale-110 transition-colors duration-300 transition-transform duration-200">MAGAZINE</a>
     </div>
   </div>
 </nav>
@@ -502,7 +481,7 @@
     <footer>
       <div class="relative">
         <div class="h-16"></div> <!-- Espace réservé pour la hauteur de la barre de pagination -->
-        <div class="sticky bottom-0 left-0 right-0 bg-white shadow-md md:shadow-none">
+        <div class="sticky bottom-0 left-0 right-0 bg-white">
             <div class="flex justify-center sm:justify-start">
                 <ol class="flex gap-1 text-base font-medium">
                     <!-- Liens numérotés de 1 à 4, visibles en tout temps -->
