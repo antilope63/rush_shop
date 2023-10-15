@@ -7,6 +7,28 @@
     <!-- <link rel="stylesheet" href="style.css"> -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
+<style>#bouton1{
+  background-color: #ffffff;
+  border-radius: 3px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  text-align: center;
+  font-size: 2px;
+  padding: 6px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+#bouton1:hover{
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  color: #ecb318;
+  text-align: center;
+  font-size: 22px;
+}
+</style>
 <body id="body">
     <header>
 
@@ -470,87 +492,22 @@
                     </div>
                   </div>
                 </div>
-          
-                <div class="lg:col-span-3">
-                  <ul class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-                    <li>
-                      <a href="#" class="group block overflow-hidden">
-                        <img
-                          src="rush_img/image/Capture d'écran 2023-10-14 104338.png"
-                          alt=""
-                          class="h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[350px]"
-                        />
-          
-                        <div class="relative bg-white pt-3">
-                          <h3
-                            class="text-xs text-gray-700 group-hover:underline group-hover:underline-offset-4"
-                          >
-                            Basic Tee
-                          </h3>
-          
-                          <p class="mt-2">
-                            <span class="sr-only"> Regular Price </span>
-          
-                            <span class="tracking-wider text-gray-900"> £24.00 GBP </span>
-                          </p>
-                        </div>
-                      </a>
-                    </li>
-          
-                    <li>
-                      <a href="#" class="group block overflow-hidden">
-                        <img
-                          src="rush_img/image/Capture d'écran 2023-10-14 105213.png"
-                          alt=""
-                          class="h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[350px]"
-                        />
-          
-                        <div class="relative bg-white pt-3">
-                          <h3
-                            class="text-l text-gray-900 group-hover:underline group-hover:underline-offset-4"
-                          >
-                            Crocs Chreck
-                          </h3>
-                          <span class="tracking-wider text-gray-600 absolute top-0 right-0 h-16 w-16"> 70.00 $ </span>
-          
-                          <button class="absolute bottom-0 right-0 h-16 w-16" id="bouton1"><img class="sm:h-[30px]" src="rush_img/icon/panier-ajouter.png" alt="icon panier-ajouter"></button>
-          
-                          <p class="mt-2">
-                            <span class="sr-only"> Price </span>
-          
-                            
-                          </p>
-                        </div>
-                      </a>
-                    </li>
-          
-                    <li>
-                      <a href="#" class="group block overflow-hidden">
-                        <img
-                          src="rush_img/image/0000353157_626467_09_504x690.webp"
-                          alt=""
-                          class="h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[350px]"
-                        />
-          
-                        <div class="relative bg-white pt-3">
-                          <h3
-                            class="text-xs text-gray-700 group-hover:underline group-hover:underline-offset-4"
-                          >
-                            Basic Tee
-                          </h3>
-          
-                          <p class="mt-2">
-                            <span class="sr-only"> Regular Price </span>
-          
-                            <span class="tracking-wider text-gray-900"> £24.00 GBP </span>
-                          </p>
-                        </div>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
+                <div class="max-w-2xl mx-auto px-4 py-8 lg:max-w-7xl grid grid-cols-1 gap-y-10 gap-x-8 sm:grid-cols-2  lg:grid-cols-3 xl:grid-cols-1">
+                  <div class="bg-white rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1617196035154-1e7e6e28b0db?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="japanese food" class="rounded-t-lg">
+                    <div class="p-4">
+                      <div class="flex mb-5">
+                        <p class="text-xl text-gray-700">
+                          crocs shreck
+                        </p>
+                        <p class="mt-0.5 ml-auto text-lg font-medium text-gray-700">48$</p>
+                      </div>
+                      <div class="flex items-center">
+                        <img src="rush_img/icon/panier-ajouter.png" alt="panier-ajouter" class="h-6 w-6 ml-auto mr-1">
+                      </div>
+                    </div>
+                  </div>
+                </div> 
           </section>
     </main>
     <footer>
